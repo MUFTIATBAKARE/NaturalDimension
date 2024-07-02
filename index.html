@@ -7,54 +7,62 @@
     <title>stageOne</title>
   </head>
   <body>
-    <div class="info_container">
-      <div>
-        <h1 class="slack_displayName" data-testid="slackDisplayName">
-          tech_mom
-        </h1>
-        <img
-          src="/media/slackProfilePicture.jpg"
-          alt="tech_mom"
-          data-testid="slackProfilePicture"
-        />
+    <div class="parent_container">
+      <div class="legend_container">
+        <div class="info_container">
+          <img
+            src="/media/slackProfilePicture.jpg"
+            alt="tech_mom"
+            data-testid="slackProfilePicture"
+          />
+          <div class="info-content-container">
+            <h4>Hello, I am</h4>
+            <h1 class="slack_displayName" data-testid="slackDisplayName">
+              tech_mom
+            </h1>
+            <p>Frontend Developer</p>
+            <p data-testid="slackEmail">bakare.muftiat@gmail.com</p>
+          </div>
+        </div>
+        <div class="date_container">
+          <h3 id="currentTime" data-testid="currentTimeUTC"></h3>
+          <h3 id="currentDay" data-testid="currentDay"></h3>
+        </div>
       </div>
-      <div class="date_container">
-        <h3 id="currentTime" data-testid="currentTimeUTC"></h3>
-        <h3 id="currentDay" data-testid="currentDay"></h3>
-      </div>
-    </div>
-    <div class="mail_container">
-      <p data-testid="slackEmail">bakare.muftiat@gmail.com</p>
-    </div>
-    <div class="subcontent_container">
-      <h3>Goals</h3>
-      <ul>
-        <li>
-          I look forward to writing clean, maintainable high-qualitycode and
-          collaborating with designers and backend developers while staying
-          up-to-date with industry trends and technologies
-        </li>
-        <li>
-          I want to create apps/website that will be useful to humanity even
-          when I'm gone---- LEGACY
-        </li>
-        <li>Trenches is bad for me, I just want to be a baller!</li>
-      </ul>
-    </div>
-    <div class="content_container">
-      <div class="link_container">
-        <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink"
-          >HNG LINK</a
-        >
-        <a href="https://keyword.dog" target="_blank" data-testid="keywordLink"
-          >KEYWORD LINK</a
-        >
-        <a
-          href="https://scrapeanyweb.site"
-          target="_blank"
-          data-testid="scrapeanywebLink"
-          >SCRAPEANYWEB</a
-        >
+
+      <div class="content_container">
+        <div class="subcontent_container">
+          <h3>Goals</h3>
+          <ul>
+            <li>
+              I look forward to writing clean, maintainable high-qualitycode and
+              collaborating with designers and backend developers while staying
+              up-to-date with industry trends and technologies
+            </li>
+            <li>
+              I want to create apps/website that will be useful to humanity even
+              when I'm gone---- LEGACY
+            </li>
+            <li>Trenches is bad for me, I just want to be a baller!</li>
+          </ul>
+        </div>
+        <div class="link_container">
+          <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink"
+            ><img src="/media/hnglogo.jpg" alt="hng"
+          /></a>
+          <a
+            href="https://keyword.dog"
+            target="_blank"
+            data-testid="keywordLink"
+            ><img src="/media/keywordlogo.svg" alt="keyword"
+          /></a>
+          <a
+            href="https://scrapeanyweb.site"
+            target="_blank"
+            data-testid="scrapeanywebLink"
+            ><img src="/media/scrapelogo.png" alt="scrapeanysite"
+          /></a>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="/script.js"></script>
